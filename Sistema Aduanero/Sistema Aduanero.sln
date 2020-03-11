@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistema Aduanero", "Sistema Aduanero\Sistema Aduanero.csproj", "{0CA854C9-6E6C-429F-960D-2B1AE58660D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CA854C9-6E6C-429F-960D-2B1AE58660D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CA854C9-6E6C-429F-960D-2B1AE58660D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CA854C9-6E6C-429F-960D-2B1AE58660D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CA854C9-6E6C-429F-960D-2B1AE58660D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C8B3C10-EADA-4010-BFBF-172F8CB857E1}
+	EndGlobalSection
+EndGlobal
