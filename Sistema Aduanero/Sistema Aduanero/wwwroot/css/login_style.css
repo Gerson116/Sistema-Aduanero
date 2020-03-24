@@ -1,26 +1,33 @@
-.contedor_titulos_login_y_registro{
+/* .contedor_titulos_login_y_registro{
+} */
 
-}
-
+/* Botón iniciar sesión*/
 .formulario_login{
     margin-top: 8px;
 }
 
-.formulario_login > div > button{
+.btn_iniciar_sesion{
+    margin-left: 0px;
     padding: 15px;
 }
+/* Botón iniciar sesión*/
 
+/* Botón mostrar registro */
 .mostrar_formulario_registro{
     margin-top: 5px;
 }
-
 .btn_mostrar_formulario_registro{
     padding: 15px;
 }
+/* Botón mostrar registro */
 
+
+/* Botón guardar registro */
 .btn_guardar_nuevo_registro{
     margin-top: 8px;
 }
-.btn_guardar_nuevo_registro > button{
+.btn_nuevo_registro{
+    margin-left: 0px;
     padding: 20px;
 }
+/* Botón guardar registro */
