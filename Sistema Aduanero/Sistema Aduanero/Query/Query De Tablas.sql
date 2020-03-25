@@ -43,14 +43,15 @@ alter table Clientes_Correo alter column Correo varchar(100)
 SELECT * FROM CLientes_Correo
 GO
 
-Create Table Pedidos
+Create Table Servicio --se cambio el nombre de la tabla Pedidos por: "Servicio"
 (
-No_Pedido int identity(1,1) primary key,
-Tipo_Pedido varchar (40),
-TIpo_Mercancia text,
+No_Solicitud int identity(1,1) primary key, --Se cambio el nombre de No_Pedido por: No_Solicitud
+Tipo_de_Solicitud varchar (40), --se cambio el nombre del campo de Pedido a: "Tipo_de_Solicitud"
+Tipo_Mercancia VARCHAR(50),
 Cantidad int,
 Peso int, --se cambio el tipo de datos
-Descripcion text, --se cambio la "ó" por una "o" solamente para evitar posibles errores.
+Descripcion VARCHAR(50), --se cambio la "ó" por una "o" solamente para evitar posibles errores.
+Fecha_de_solicitud date not null,
 Estatus varchar(30),
 Cliente_ID_FK int not null,
 Constraint Fk_CP foreign key (Cliente_ID_FK) references Clientes(ID)
@@ -82,7 +83,7 @@ Create Table Declaracion
 No_Declaracion int identity(1,1) primary key, 
 ID_Factura_FK int, 
 Cliente_ID_Fk int, 
-Descripcion text,
+Descripcion VARCHAR(50),
 Estatus varchar(30),
 constraint FK_FD foreign key (ID_Factura_FK) references Facturacion(ID_Factura),
 constraint FK_CD foreign key (Cliente_ID_FK) references Clientes(ID)
@@ -110,12 +111,18 @@ Create Table Envio
 (
 ID_Envio int identity(1,1) primary key, 
 ID_Factura_FK int, 
-Cliente_ID_FK int, 
-Cantidad_Articulos int, 
+Cliente_ID_FK int,
+Cantidad_Articulos int,
 Dia int, 
 Mes int, 
 Anio int, --Se cambio el nombre del campo año por: "anio"
 Estatus varchar(20),
+Nombre_completo_de_quien_recibe VARCHAR(50),
+Cedula_de_quien_recibe VARCHAR(50),
+Provincia varchar(50), -- Se agrego este nuevo campo
+Municipio varchar(50), --Se agrego este nuevo campo
+Calle varchar(30), --Se agrego este  nuevo campo
+Sector varchar(30),--Se agrego este  nuevo campo
 constraint FK_CE1 foreign key (Cliente_ID_FK) references Clientes(ID),
 constraint FK_FE1 foreign key (ID_Factura_FK) references Facturacion(ID_Factura)
 )
