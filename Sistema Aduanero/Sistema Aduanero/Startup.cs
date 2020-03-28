@@ -90,6 +90,10 @@ namespace Sistema_Aduanero
                     name: "cliente_formulario_para_Servicio_De_Importacion_O_Exportacion",
                     template: "{controller=Cliente}/{action=Solicitar_Servicio_De_Importacion_O_Exportacion}/{id?}"
                 );
+                routes.MapRoute(
+                    name: "Facturacion",
+                    template: "{controller=Cliente}/{action=Facturar}/{id?}"
+                );
                 //Rutas para el empleado
             });
         }
